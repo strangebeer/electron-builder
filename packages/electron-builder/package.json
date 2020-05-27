@@ -15,6 +15,10 @@
     "url": "ssh://git@github.com/strangebeer/electron-builder.git",
     "directory": "packages/electron-builder"
   },
+  "publishConfig": {
+    "tag": "next",
+    "registry": "https://npm.pkg.github.com/"
+  },
   "engines": {
     "node": ">=8.12.0"
   },
@@ -68,8 +72,5 @@
     "@types/fs-extra": "^9.0.1",
     "@types/is-ci": "^2.0.0"
   },
-  "typings": "./out/index.d.ts",
-  "publishConfig": {
-    "tag": "next"
-  }
+  "typings": "./out/index.d.ts"
 }

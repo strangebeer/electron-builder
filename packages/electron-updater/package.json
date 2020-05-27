@@ -10,6 +10,10 @@
     "url": "ssh://git@github.com/strangebeer/electron-builder.git",
     "directory": "packages/electron-updater"
   },
+  "publishConfig": {
+    "tag": "next",
+    "registry": "https://npm.pkg.github.com/"
+  },
   "bugs": "https://github.com/electron-userland/electron-builder/issues",
   "homepage": "https://github.com/electron-userland/electron-builder",
   "files": [
@@ -29,8 +33,5 @@
     "@types/js-yaml": "^3.12.3",
     "@types/lodash.isequal": "^4.5.5"
   },
-  "typings": "./out/main.d.ts",
-  "publishConfig": {
-    "tag": "next"
-  }
+  "typings": "./out/main.d.ts"
 }

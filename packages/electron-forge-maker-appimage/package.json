@@ -9,6 +9,9 @@
     "url": "ssh://git@github.com/strangebeer/electron-builder.git",
     "directory": "packages/electron-forge-maker-appimage"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "bugs": "https://github.com/electron-userland/electron-builder/issues",
   "homepage": "https://github.com/electron-userland/electron-builder",
   "files": [
