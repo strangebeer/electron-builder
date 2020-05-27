@@ -1,5 +1,5 @@
 {
-  "name": "electron-forge-maker-nsis",
+  "name": "@strangebeer/electron-forge-maker-nsis",
   "version": "22.7.0",
   "main": "main.js",
   "author": "Vladimir Krivosheev",

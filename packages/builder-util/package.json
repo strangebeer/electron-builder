@@ -1,5 +1,5 @@
 {
-  "name": "builder-util",
+  "name": "@strangebeer/builder-util",
   "version": "22.7.0",
   "main": "out/util.js",
   "author": "Vladimir Krivosheev",

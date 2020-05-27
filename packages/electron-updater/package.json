@@ -1,5 +1,5 @@
 {
-  "name": "electron-updater",
+  "name": "@strangebeer/electron-updater",
   "version": "4.3.2",
   "description": "Cross platform updater for electron applications",
   "main": "out/main.js",

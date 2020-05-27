@@ -1,5 +1,5 @@
 {
-  "name": "builder-util-runtime",
+  "name": "@strangebeer/builder-util-runtime",
   "version": "8.7.0",
   "main": "out/index.js",
   "author": "Vladimir Krivosheev",
