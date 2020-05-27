@@ -197,6 +197,12 @@ export interface S3Options extends BaseS3Options {
    * The endpoint should be a string like `https://{service}.{region}.amazonaws.com`.
    */
   readonly endpoint?: string | null
+
+  /**
+   * A base url that electron-updater will check for updates at. Useful if you use a CDN service to accelerate
+   * your bucket access.
+   */
+  readonly customBaseUrl?: string | null
 }
 
 /**
@@ -232,6 +238,9 @@ export function getS3LikeProviderBaseUrl(configuration: PublishConfiguration) {
 }
 
 function s3Url(options: S3Options) {
+  if (options.customBaseUrl) {
+    return options.customBaseUrl
+  }
   let url: string
   if (options.endpoint != null) {
     url = `${options.endpoint}/${options.bucket}`
